@@ -1,6 +1,8 @@
 # Identicon
 
-**TODO: Add description**
+Project 2: of UDemy's Elixer & Phoenix Bootcamp Taught by Stephen Grider
+
+Identicon is a simple project written in Elixir that demonstrates Elixir's capacity to manipulate images.
 
 ## Installation
 
