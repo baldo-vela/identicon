@@ -2,7 +2,7 @@
 
 Project 2: of UDemy's Elixer & Phoenix Bootcamp Taught by Stephen Grider
 
-Identicon is a simple project written in Elixir that demonstrates Elixir's capacity to manipulate images.
+Identicon is a simple project written in Elixir that demonstrates Elixir's capacity to manipulate images. In essence it will generate an identicon image based on a string of characters.
 
 ## Installation
 
