@@ -9,8 +9,9 @@ defmodule Identicon do
 
   def build_grid(%Identicon.Image{hex: hex} = image) do
     hex
+    # TODO: Change this to non deprecaated Enum.chunk_every()
     |> Enum.chunk(3)
-    |> mirror_row
+    |> Enum.map(&mirror_row/1)
 
   end
 
