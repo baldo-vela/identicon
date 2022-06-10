@@ -4,6 +4,11 @@ defmodule Identicon do
     |> hash_input
     |> pick_color
     |> build_grid
+    |> filter_odd_squares
+
+  end
+
+  def filter_odd_squares(grid) do
 
   end
 
