@@ -1,4 +1,12 @@
 defmodule Identicon do
+
+
+  @moduledoc """
+    Udemy course on Elixir and Phoenix
+    Draws an identicon and saves it to a PNG
+
+  """
+
   def main(input) do
     input
     |> hash_input
