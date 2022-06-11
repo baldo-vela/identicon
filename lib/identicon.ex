@@ -6,6 +6,11 @@ defmodule Identicon do
     |> build_grid
     |> filter_odd_squares
     |> build_pixel_map
+    |> draw_image
+
+  end
+
+  def draw_image(%Identicon.Image{}) do
 
   end
 
