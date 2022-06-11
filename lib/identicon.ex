@@ -7,6 +7,11 @@ defmodule Identicon do
     |> filter_odd_squares
     |> build_pixel_map
     |> draw_image
+    |> save_image(input)
+
+  end
+
+  def save_image(image, input) do
 
   end
 
