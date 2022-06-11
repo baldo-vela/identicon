@@ -10,7 +10,7 @@ defmodule Identicon do
 
   end
 
-  def draw_image(%Identicon.Image{}) do
+  def draw_image(%Identicon.Image{color: color, pixel_map: pixel_map}) do
 
   end
 
