@@ -76,6 +76,25 @@ defmodule Identicon do
     row ++ [second, first]
   end
 
+  @doc """
+    Given a structured input of hex values, aasigns the first three hex values as a color to a structured output
+
+    ## Examples
+      iex> hex = Identicon.hash_input("asdf")
+      %Identicon.Image{
+        color: nil,
+        grid: nil,
+        hex: [145, 46, 200, 3, 178, 206, 73, 228, 165, 65, 6, 141, 73, 90, 181, 112],
+        pixel_map: nil
+      }
+      iex> Identicon.pick_color(hex)
+      %Identicon.Image{
+        color: {145, 46, 200},
+        grid: nil,
+        hex: [145, 46, 200, 3, 178, 206, 73, 228, 165, 65, 6, 141, 73, 90, 181, 112],
+        pixel_map: nil
+      }
+  """
   def pick_color(%Identicon.Image{hex: [r, g, b | _tail]} = image) do
     %Identicon.Image{image | color: {r, g, b}}
   end
